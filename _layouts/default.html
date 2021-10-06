@@ -18,7 +18,7 @@
     {% include head-custom.html %}
   </head>
   <body>
-    {% unless page.show_header == false % or site.show_header == false}
+    {% unless page.show_header == false %}
       <div id="header">
         <nav>
           <ul>
@@ -40,7 +40,7 @@
           <h1>{{ page.title | default: site.github.repository_name }}</h1>
           <p>{{ page.description | default: site.github.project_tagline }}</p>
           <hr>
-		  {% unless page.show_credits == false or site.show_credits == false %}
+		  {% unless page.show_credits == false %}
 			<span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
 			<span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
 		  {% endunless %}
