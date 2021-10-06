@@ -35,9 +35,7 @@
 
     <div class="wrapper">
 
-	  {% unless site.show_header == false %}
       <section>
-	  {% endunless %}
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -50,9 +48,7 @@
 
         {{ content }}
 
-	  {% unless site.show_header == false %}
-	  <section>
-	  {% endunless %}
+      </section>
 
     </div>
   </body>
